@@ -1,1 +1,2 @@
-# AICPP
+# AICPP - Learning AI, learning C++
+# 

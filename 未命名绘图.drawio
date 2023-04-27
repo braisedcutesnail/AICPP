@@ -1,14 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T08:44:45.300Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="gNZjEWREQ8HDRGkIPimy" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-27T01:47:39.720Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="n9aPDR_qaLVaT9l4eq7w" version="21.1.8" type="github">
   <diagram name="第 1 页" id="JNbYGIVMD-ZtWVQabCgr">
     <mxGraphModel dx="2027" dy="1148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wYlKqQrf3RQWFzW5OBA8-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="wYlKqQrf3RQWFzW5OBA8-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="90" y="390" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wYlKqQrf3RQWFzW5OBA8-2" value="&lt;h1&gt;Terms&lt;/h1&gt;&lt;p&gt;forward: thread&lt;/p&gt;&lt;p&gt;module: process&lt;/p&gt;&lt;p&gt;4PE: full size detection model&lt;/p&gt;&lt;p&gt;2PE: perception rectangular&lt;/p&gt;&lt;p&gt;resize: 1/8 scale of full size&lt;/p&gt;&lt;p&gt;crop: roi of the full size, most areas of full size based on fixed rules&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="wYlKqQrf3RQWFzW5OBA8-2" value="&lt;h1&gt;Terms&lt;/h1&gt;&lt;p&gt;forward: thread&lt;/p&gt;&lt;p&gt;module: process&lt;/p&gt;&lt;p&gt;4PE: full size detection model&lt;/p&gt;&lt;p&gt;2PE: perception rectangular&lt;/p&gt;&lt;p&gt;resize: 1/8 scale of full size&lt;/p&gt;&lt;p&gt;crop: roi of the full size, most areas of full size based on fixed rules&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="10" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5hBBgSiS0i060Lc06q17-1" value="&lt;h1&gt;Definition&lt;/h1&gt;&lt;p&gt;each module definition file ending with &quot;_module.cpp&quot;&lt;/p&gt;&lt;p&gt;forward definition entrance: FORWARD_DEFINE(ModuleName,ForwardNo.)&lt;/p&gt;&lt;p&gt;each module initialization in ADASModuleInit function, eg. msgpool size etc.&lt;/p&gt;&lt;p&gt;the most workflow definition is in the file &quot;hobot_adas_workflow.cpp&quot;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="15" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5hBBgSiS0i060Lc06q17-2" value="&lt;h1&gt;Suggestions&lt;/h1&gt;&lt;div&gt;add new function or fix bugs better to create a new forward and link to the main framework first comb the workflow-&amp;gt;forward-&amp;gt;module-&amp;gt;variance-&amp;gt;function-&amp;gt;corner cases&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="704" y="15" width="566" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5hBBgSiS0i060Lc06q17-3" value="&lt;h1&gt;Issuelist&lt;/h1&gt;&lt;p&gt;1. the workflow &quot;From&quot; and &quot;To&quot; is defined in different files,even using different name, for example freespace module, this,freespacemodule,sp_freespace_.get(),etc., which makes it very difficult to search the definition, making the job extremely confused.&lt;/p&gt;&lt;p&gt;2.Forward No definition does not always start from 0&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="15" width="750" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

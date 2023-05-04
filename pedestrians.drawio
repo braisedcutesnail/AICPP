@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-04T11:20:47.445Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="fnqwzD2wbddBTLeY_SsB" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-04T11:26:04.663Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="rR8FqUePUkyQwzxhzB09" version="21.2.7" type="github">
   <diagram name="第 1 页" id="9pobnR72q5jy9rtLN9cD">
-    <mxGraphModel dx="2670" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8935" dy="4592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -686,6 +686,186 @@
             <mxPoint x="1870" y="7910" as="sourcePoint" />
             <mxPoint x="1916" y="7910.42" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-224" value="GetFullClassName" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="230" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-225" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-224">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-226" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-224">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-227" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-224">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-228" value="GetGlobalMessage" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="570" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-229" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-228">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-230" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-228">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-231" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-228">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-232" value="GetSetting" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="880" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-233" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-232">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-234" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-232">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-235" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-232">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-236" value="ParsingSceneMsg" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="1200" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-237" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-236">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-238" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-236">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-239" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-236">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-240" value="GetTrackingConfParamMsg" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="1510" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-241" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-240">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-242" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-240">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-243" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-240">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-244" value="TrackingPrepare" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="1830" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-245" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-244">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-246" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-244">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-247" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-244">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-248" value="Tracking" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="2130" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-249" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-248">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-250" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-248">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-251" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-248">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-252" value="estimate" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="2460" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-253" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-252">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-254" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-252">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-255" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-252">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-256" value="OutputPrepare" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="2780" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-257" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-256">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-258" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-256">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-259" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-256">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-260" value="Output" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="3100" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-261" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-260">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-262" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-260">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-263" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-260">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-264" value="EndProcess" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="3410" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-265" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-264">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-266" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-264">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-267" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-264">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-268" value="GetPedestriansNum" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="3720" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-269" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-268">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-270" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-268">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-271" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-268">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-272" value="UpdatelastImgMsg" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="4050" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-273" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-272">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-274" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-272">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-275" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-272">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-276" value="SetDoneTimestamp" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="4380" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-277" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-276">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-278" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-276">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-279" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-276">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-280" value="AddModuleInfo" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2491" y="4710" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-281" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-280">
+          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-282" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-280">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-283" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-280">
+          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

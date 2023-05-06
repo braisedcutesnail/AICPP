@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-06T05:11:21.179Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="at_n4X1TRXTxg41i908i" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-06T11:58:10.835Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="icXC4XayIz-A6uXNlPp3" version="21.2.7" type="github">
   <diagram name="第 1 页" id="9pobnR72q5jy9rtLN9cD">
-    <mxGraphModel dx="2225" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="5331" dy="2551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -384,74 +384,47 @@
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-143" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-142">
           <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-144" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-142">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-145" value="pedestrians_: 行人跟踪列表" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-142">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-144" value="各参数如下：&lt;br&gt;pedestrians_: 行人跟踪列表&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Input_count:&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-142">
+          <mxGeometry x="7.5" y="70" width="210" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-146" value="WorkModeSwitch4PEHead" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="4310" width="250" height="250" as="geometry" />
+          <mxGeometry x="1311.1" y="5010" width="250" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-147" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-146">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-147" value="作用：将停车模型中的人头检测功能打开" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-146">
+          <mxGeometry x="7.5" y="35" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-148" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-146">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-149" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-146">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-148" value="各参数如下：&lt;br&gt;parking_scene_checker:&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;is_parking_scene:&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;enable_head_output_parking_&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-146">
+          <mxGeometry x="7.5" y="65" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-150" value="InitPerceptionResults" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="4610" width="250" height="250" as="geometry" />
+          <mxGeometry x="1311.1" y="5210" width="250" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-151" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-150">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-152" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-150">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-153" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-150">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-151" value="作用：将ped/cyclist/head存放在&lt;br&gt;pr_l_ori和pr_l_" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-150">
+          <mxGeometry x="7.5" y="30" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-154" value="GetMergedPair" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="4920" width="250" height="250" as="geometry" />
+          <mxGeometry x="1289.78" y="5340" width="292.65" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-155" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-154">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-155" value="作用：返回mergerd_pair_，来自有后方的函数ped&lt;br&gt;还是车辆模块的结果？" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-154">
+          <mxGeometry x="3.75" y="25" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-156" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-154">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-157" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-154">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-156" value="各参数如下：&lt;br&gt;merged_pair_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-154">
+          <mxGeometry x="3.75" y="80" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-158" value="GetOriginPerceptionList" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="5240" width="250" height="250" as="geometry" />
+          <mxGeometry x="1311.1" y="5520" width="250" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-159" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-158">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-160" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-158">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-161" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-158">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-159" value="作用：返回车辆的感知结果列表" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-158">
+          <mxGeometry x="7.5" y="35" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-162" value="FilterPedOnTrunck" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="5550" width="250" height="250" as="geometry" />
+          <mxGeometry x="1311.11" y="5650" width="250" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-163" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-162">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-164" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-162">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-165" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-162">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-163" value="作用：删除行人与车辆可以融合的目标" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-162">
+          <mxGeometry x="7.5" y="35" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-166" value="PreProcessOneFrame" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="5880" width="250" height="250" as="geometry" />
+          <mxGeometry x="1311.11" y="5790" width="250" height="250" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-167" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-166">
           <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
@@ -463,177 +436,132 @@
           <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-170" value="GetMergedPair" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="8160" width="250" height="250" as="geometry" />
+          <mxGeometry x="1310" y="7140" width="250" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-171" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-170">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-171" value="作用：返回merged_pair_" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-170">
+          <mxGeometry x="7.5" y="35" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-172" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-170">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-174" value="SetCoveredVehByPed" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="7460" width="250" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-173" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-170">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-174" value="SetCoveredVrhByPed" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="8480" width="250" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-175" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-174">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-175" value="作用：车辆模块" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-174">
+          <mxGeometry x="7.5" y="35" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-176" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-174">
           <mxGeometry y="70" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-177" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-174">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
-        </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-178" value="SetVehSideRectCoveredByPed" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="8790" width="250" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-179" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-178">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
+          <mxGeometry x="1310" y="7770" width="250" height="250" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-180" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-178">
           <mxGeometry y="70" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-181" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-178">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-478" value="作用：车辆模块" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-178">
+          <mxGeometry x="8.610000000000127" y="30" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-182" value="SetVehBoardSideCoveredByPed" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="9090" width="250" height="250" as="geometry" />
+          <mxGeometry x="1310" y="8070" width="250" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-183" value="作用：主要是为了获取需跟踪的行人目标&lt;br&gt;的系统参数值" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-182">
-          <mxGeometry x="7.5" y="30" width="240" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-184" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-182">
-          <mxGeometry y="70" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-185" value="min_valid_frames_:最少连续帧&lt;br&gt;min_valid_conf_:最小置信度&lt;br&gt;min_valid_acc_conf:&lt;br&gt;min_accept_con_without_cnn_:&lt;br&gt;min_accept_avg_conf_:&lt;br&gt;max_miss_det_:最大丢失帧数&lt;br&gt;use_cam_validate_:是否使用相机消失点去过滤非路面目标&lt;br&gt;use_lk_:&lt;br&gt;use_kf_:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-182">
-          <mxGeometry x="26.25" y="90" width="202.5" height="150" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-477" value="作用：车辆模块" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-182">
+          <mxGeometry x="16" y="30" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-186" value="workflow-&amp;gt;return传递FW0的输出结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="9440" width="240" height="60" as="geometry" />
+          <mxGeometry x="1316.1" y="8380" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-187" value="RemoveInvalid" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1670" y="5890" width="200" height="140" as="geometry" />
+          <mxGeometry x="1630" y="5790" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-188" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-187">
-          <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-456" value="作用：对感知框置信度低，感知框底边在消失点上方的感知框进行过滤。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-187">
+          <mxGeometry x="5.000000000000055" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-457" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pr_l: ped_perception_list&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pr_l_ori:ped_origin" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-187">
+          <mxGeometry x="5.000000000000055" y="79" width="185" height="61" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-189" value="NMSForPrRects" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1670" y="6080" width="200" height="140" as="geometry" />
+          <mxGeometry x="1627.5" y="5970" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-190" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-189">
-          <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-459" value="作用：对重叠度较高的感知框进行过滤，保留在下方的感知框" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-189">
+          <mxGeometry x="2.5" y="15" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-460" value="各参数如下：&lt;br&gt;r1_ratio: 交集宽度占当前框宽度比例&lt;br&gt;r2_ratio:交集宽度占被对比的框宽度比例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-189">
+          <mxGeometry x="2.5" y="64" width="185" height="61" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-191" value="MapPedPair" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1670" y="6270" width="200" height="140" as="geometry" />
+          <mxGeometry x="1627.5" y="6150" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-192" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-191">
-          <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-461" value="作用：对cyclist和ped进行合并，用ped_pair的格式存储在ped_pairs中" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-191">
+          <mxGeometry x="5.320000000000164" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-193" value="GetPedStatePre" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1670" y="6460" width="200" height="140" as="geometry" />
+          <mxGeometry x="1627.5" y="6290" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-194" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-193">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-194" value="作用：更新内参测距与外参测距结果" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-193">
           <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-195" value="FiterPedPair" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="7560" width="200" height="140" as="geometry" />
+          <mxGeometry x="1630" y="6740" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-196" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-195">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-196" value="作用：判断感知框是否处于边缘状态做删除操作，同时对ped_pairs进行按距离排序，并只保留max_cnt个元素。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-195">
           <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-197" value="PedObjectTrackPre" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="7830" width="200" height="140" as="geometry" />
+          <mxGeometry x="1630" y="6990" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-198" value="作用：判断感知框是否处于边缘状态做删除操作" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-197">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-198" value="作用：预跟踪" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-197">
           <mxGeometry x="7.5" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-199" value="GetMergedPair" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1950" y="6410" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6290" width="200" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-200" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-199">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-201" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-199">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-202" value="UndistortPerceptionsRect" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
-          <mxGeometry x="2480" y="6430" width="200" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-203" value="作用：对矩形框的上下左右四个点进行畸变校正" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-202">
-          <mxGeometry y="30" width="190" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-204" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_top: 上边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_bottom：下边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_left：左边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_right：右边界中点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-202">
-          <mxGeometry y="70" width="167.5" height="85" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-205" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="2420" y="6520" as="sourcePoint" />
-            <mxPoint x="2466" y="6520.42" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-200" value="作用：返回merged_pair_" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-199">
+          <mxGeometry x="5" y="30" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-206" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1890" y="6529.58" as="sourcePoint" />
-            <mxPoint x="1936" y="6530" as="targetPoint" />
+            <mxPoint x="1834" y="6310" as="sourcePoint" />
+            <mxPoint x="1880" y="6310.42" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-207" value="GetOriginPerceptionList" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1950" y="6690" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6400" width="200" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-208" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-207">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-209" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-207">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-464" value="作用：返回origin_perception_list_" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-207">
+          <mxGeometry x="5" y="22.5" width="190" height="47.5" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-210" value="GetTricyclistsStatePre" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1950" y="6970" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6510" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-211" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-210">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-212" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-210">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-211" value="作用：将special_motor和general_motor的矩形框存储在ped_on_moto_rects-&amp;gt;veh_rects中" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-210">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-213" value="GetRefHbyNearCar" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1950" y="7260" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6640" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-214" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-213">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-215" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-213">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-214" value="作用：利用1.5m车辆的高度去估计行人高度" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-213">
+          <mxGeometry x="5" y="30" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-216" value="SegmentByLateralDistance" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1940" y="7550" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6740" width="200" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-217" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-216">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-218" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-216">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-217" value="作用：将目标距离自车x方向小于70y方向小于5的移动到pair_vec的开始处" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-216">
+          <mxGeometry x="5" y="30" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-219" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1870" y="7620" as="sourcePoint" />
-            <mxPoint x="1916" y="7620.42" as="targetPoint" />
+            <mxPoint x="1830" y="6790" as="sourcePoint" />
+            <mxPoint x="1876" y="6790.42" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-220" value="TrackAndUpdateObjectsPre" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1940" y="7830" width="200" height="250" as="geometry" />
+          <mxGeometry x="1880" y="6990" width="200" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-221" value="作用：根据type进行不同的畸变校正，此处是对非perceptionType_3DCarRaw和PerceptionType_SkeletonRaw&lt;br&gt;进行处理（亦即perceptionType_ped）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-220">
-          <mxGeometry x="5" y="30" width="190" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-222" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;percepts:来自父函数的ped_perception_list，内容为&lt;br&gt;[ped_0,ped_1,…,ped_n,cyclist_0&lt;br&gt;,cyclist_1，…,cycylist_m]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;undistort: 来自父函数传递过来的cam_0的畸变参数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-220">
-          <mxGeometry x="5" y="130" width="185" height="110" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-221" value="作用：利用目标预测框和检测框的iou进行预跟踪" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-220">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-223" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1870" y="7910" as="sourcePoint" />
-            <mxPoint x="1916" y="7910.42" as="targetPoint" />
+            <mxPoint x="1834" y="7030" as="sourcePoint" />
+            <mxPoint x="1880" y="7030.42" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-224" value="GetFullClassName" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -1137,41 +1065,53 @@
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-376" value="Predict" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
           <mxGeometry x="1610" y="3885" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-377" value="作用：里程计信息初始化" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-376">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-377" value="作用：待跟踪目标状态更新" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-376">
           <mxGeometry x="7.5" y="30" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-378" value="GetInputCount" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
-          <mxGeometry x="1610" y="4050" width="200" height="140" as="geometry" />
+          <mxGeometry x="1601.25" y="4050" width="217.5" height="140" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-379" value="作用：里程计信息初始化" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-378">
           <mxGeometry x="7.5" y="30" width="190" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-427" value="各参数如下：&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Input_count_: count of input frames, inited at creation&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-378">
+          <mxGeometry x="7.5" y="60" width="192.5" height="50" as="geometry" />
+        </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-380" value="GetCurInputStatusByIdx" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
           <mxGeometry x="1610" y="4220" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-381" value="作用：里程计信息初始化" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-380">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-431" value="作用：返回inputs_status_[idx]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-380">
           <mxGeometry x="7.5" y="30" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-382" value="GetLastInputStatusByIdx" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-382" value="GetLastInputFrameByIdx" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
           <mxGeometry x="1610" y="4380" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-383" value="作用：里程计信息初始化" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-382">
-          <mxGeometry x="7.5" y="30" width="190" height="30" as="geometry" />
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-430" value="作用：得到一次输入的第input_idx帧数据，可以为不同摄像头，也可以是一个摄像头输入的几帧。&lt;br&gt;frame_buf_-&amp;gt;GetWriteBuff()-&amp;gt;inputs_frame_[idx]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-382">
+          <mxGeometry x="5" y="32.5" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-384" value="DistortPerceptionRect" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
           <mxGeometry x="1610" y="4536" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-385" value="作用：里程计信息初始化" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-384">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-385" value="作用：对感知框进行畸变，从而将预测的感知框映射到原图中" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-384">
           <mxGeometry x="7.5" y="30" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-386" value="PredictInput" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1860" y="4080" width="200" height="80" as="geometry" />
+          <mxGeometry x="1855" y="4400" width="210" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-416" value="各参数如下：&lt;br&gt;inputs_status_:一帧内的所有目标&lt;br&gt;cur_tf_in-&amp;gt;source_:&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-386">
+          <mxGeometry x="10" y="150" width="190" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-417" value="作用：对目标进行预测&lt;br&gt;status为true使用相对速度进行当前位置预测，为false时使用绝对速度进行预测（实际上用的还是相对速度，默认自车为0，或者认为相对速度不考虑自车转向）。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-386">
+          <mxGeometry x="10" y="22.5" width="190" height="107.5" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-387" value="PredictStatus" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="1860" y="3885" width="200" height="125" as="geometry" />
+          <mxGeometry x="1860" y="3890" width="200" height="470" as="geometry" />
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-403" value="作用：对当前帧的pos_cam_, pos_by_cb_" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-387">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-403" value="作用：对当前帧的各个状态值进行预测与更新" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-387">
           <mxGeometry x="5" y="27.5" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-404" value="各参数如下：&lt;br&gt;pos_cam_: 当前帧&lt;br&gt;pos_by_cb_：？&lt;br&gt;hostveh_speed_:&lt;br&gt;hostveh_yaw_:&lt;br&gt;hostveh_yawrate:&lt;br&gt;hostveh_x:&lt;br&gt;hostveh_y:&lt;br&gt;time_stamp_:&lt;br&gt;frame_id_:&lt;br&gt;dt_:&lt;br&gt;pos_vcs_:&lt;br&gt;world_vel_&lt;br&gt;ref_vel_:&lt;br&gt;abs_vel_world_:&lt;br&gt;is_covered_:&lt;br&gt;type_cyc_:&lt;br&gt;occlusion_cls_res_:&lt;br&gt;life_frame_: 有感知的帧数量统计&lt;br&gt;life_time_: 当前帧至第一帧之间的时长&lt;br&gt;frames_of_no_dispatch_：连续帧的数量&lt;br&gt;frames_of_no_coorect_:没有修正的帧数&lt;br&gt;miss_tracking_:跟踪次数？&lt;br&gt;miss_detection_: 有感知信息的次数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-387">
+          <mxGeometry x="10" y="65" width="190" height="405" as="geometry" />
         </mxCell>
         <mxCell id="eINXOdEoiIzQeCJLC4Ov-388" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1185,7 +1125,7 @@
             <mxPoint x="1860" y="3924.79" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eINXOdEoiIzQeCJLC4Ov-390" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-387" target="eINXOdEoiIzQeCJLC4Ov-386">
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-390" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-387" target="eINXOdEoiIzQeCJLC4Ov-386">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1740" y="3940" as="sourcePoint" />
             <mxPoint x="1790" y="3890" as="targetPoint" />
@@ -1234,6 +1174,271 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2460" y="3930" as="sourcePoint" />
             <mxPoint x="2510" y="3880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-405" value="GetPrevInputFrameByIdx" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="4360" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-406" value="作用：得到一次输入的第input_idx帧数据，可以为不同摄像头，也可以是一个摄像头输入的几帧。&lt;br&gt;frame_buf_-&amp;gt;Pop()-&amp;gt;inputs_frame_[idx]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-405">
+          <mxGeometry x="5" y="30" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-408" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2060" y="4399.76" as="sourcePoint" />
+            <mxPoint x="2110" y="4399.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-409" value="GetnewInputFrame" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="4530" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-410" value="作用：得到一次输入的第input_idx帧数据，可以为不同摄像头，也可以是一个摄像头输入的几帧。&lt;br&gt;frame_buf_-&amp;gt;GetWriteBuff()-&amp;gt;inputs_frame_[idx]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-409">
+          <mxGeometry x="5" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-415" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="eINXOdEoiIzQeCJLC4Ov-409">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="195" y="17.26000000000022" as="sourcePoint" />
+            <mxPoint x="245" y="17" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-411" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-405" target="eINXOdEoiIzQeCJLC4Ov-409">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2160" y="4230" as="sourcePoint" />
+            <mxPoint x="2210" y="4180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-412" value="GetLastInputFrameByIdx" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="2355" y="4530" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-414" value="作用：得到一次输入的第input_idx帧数据，可以为不同摄像头，也可以是一个摄像头输入的几帧。&lt;br&gt;frame_buf_-&amp;gt;GetWriteBuff()-&amp;gt;inputs_frame_[idx]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-412">
+          <mxGeometry x="5" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-418" value="RectImageToGround" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="4690" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-419" value="作用：将图像上的点转到地面上，此处将矩形框的左下角、下中点、右下角转到地面坐标系" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-418">
+          <mxGeometry x="5" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-420" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="eINXOdEoiIzQeCJLC4Ov-418">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="195" y="17.26000000000022" as="sourcePoint" />
+            <mxPoint x="245" y="17" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-421" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-410" target="eINXOdEoiIzQeCJLC4Ov-418">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2070" y="4290" as="sourcePoint" />
+            <mxPoint x="2120" y="4240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-422" value="Mat3x3Multiply" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="4688" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-423" value="作用：变换矩阵" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-422">
+          <mxGeometry x="5" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-424" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-378" target="eINXOdEoiIzQeCJLC4Ov-380">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2070" y="4330" as="sourcePoint" />
+            <mxPoint x="2120" y="4280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-425" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-380" target="eINXOdEoiIzQeCJLC4Ov-382">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2070" y="4330" as="sourcePoint" />
+            <mxPoint x="2120" y="4280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-426" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-382" target="eINXOdEoiIzQeCJLC4Ov-384">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2070" y="4330" as="sourcePoint" />
+            <mxPoint x="2120" y="4280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-432" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-142" target="eINXOdEoiIzQeCJLC4Ov-433">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2100" y="4370" as="sourcePoint" />
+            <mxPoint x="1436" y="4260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-433" value="RefreshPath" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1311.1" y="4710" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-434" value="作用：将道路线的系数存储在cur_path_中" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-433">
+          <mxGeometry x="7.5" y="35" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-435" value="各参数如下：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-433">
+          <mxGeometry y="70" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-436" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-433" target="eINXOdEoiIzQeCJLC4Ov-146">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1980" y="5160" as="sourcePoint" />
+            <mxPoint x="2030" y="5110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-437" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-146" target="eINXOdEoiIzQeCJLC4Ov-150">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1540" y="5410" as="sourcePoint" />
+            <mxPoint x="1590" y="5360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-438" value="UnDistortPerceptions" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="5210" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-445" value="作用：对感知框去畸变" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-438">
+          <mxGeometry x="10" y="32.5" width="190" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-442" value="UndistortPerceptionRect" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="5210" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-444" value="作用：对感知框去畸变" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-442">
+          <mxGeometry x="10" y="22.5" width="190" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-446" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1560" y="5249.84" as="sourcePoint" />
+            <mxPoint x="1610" y="5249.58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-447" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1810" y="5240.26" as="sourcePoint" />
+            <mxPoint x="1860" y="5240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-448" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-150" target="eINXOdEoiIzQeCJLC4Ov-154">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2010" y="5480" as="sourcePoint" />
+            <mxPoint x="2060" y="5430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-449" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-154" target="eINXOdEoiIzQeCJLC4Ov-158">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1660" y="5500" as="sourcePoint" />
+            <mxPoint x="1710" y="5450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-450" value="GetOriginPerceptionList" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#6666FF;" vertex="1" parent="1">
+          <mxGeometry x="1618.75" y="5520" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-451" value="作用：返回origin_perception_list_" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-450">
+          <mxGeometry x="10" y="32.5" width="190" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-452" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1568.75" y="5560.09" as="sourcePoint" />
+            <mxPoint x="1618.75" y="5559.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-453" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-158" target="eINXOdEoiIzQeCJLC4Ov-162">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1820" y="5830" as="sourcePoint" />
+            <mxPoint x="1870" y="5780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-454" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-162" target="eINXOdEoiIzQeCJLC4Ov-166">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1860" y="5930" as="sourcePoint" />
+            <mxPoint x="1910" y="5880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-455" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1568.75" y="5820.26" as="sourcePoint" />
+            <mxPoint x="1618.75" y="5820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-458" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-457" target="eINXOdEoiIzQeCJLC4Ov-189">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1730" y="5800" as="sourcePoint" />
+            <mxPoint x="1780" y="5750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-462" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-189" target="eINXOdEoiIzQeCJLC4Ov-191">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1690" y="6060" as="sourcePoint" />
+            <mxPoint x="1740" y="6010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-463" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-191" target="eINXOdEoiIzQeCJLC4Ov-193">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1690" y="6390" as="sourcePoint" />
+            <mxPoint x="1740" y="6340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-465" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-464" target="eINXOdEoiIzQeCJLC4Ov-210">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1880" y="6630" as="sourcePoint" />
+            <mxPoint x="1930" y="6580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-466" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-199" target="eINXOdEoiIzQeCJLC4Ov-207">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2360" y="6730" as="sourcePoint" />
+            <mxPoint x="2410" y="6680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-467" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-210" target="eINXOdEoiIzQeCJLC4Ov-213">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2360" y="6880" as="sourcePoint" />
+            <mxPoint x="2410" y="6830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-468" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-193" target="eINXOdEoiIzQeCJLC4Ov-195">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2240" y="6700" as="sourcePoint" />
+            <mxPoint x="2290" y="6650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-469" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-195">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2240" y="6700" as="sourcePoint" />
+            <mxPoint x="1730" y="6990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-471" value="按照距离对ped_pairs每个目标进行权重计算，并将min_size个目标中满粗has_2pe_res_和_use_2pe_detection_属性的cyclist目标分别存入forward_ped_prfortask_list和forward5_ped_prfortask_2pe_det中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="910" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-472" value="CalAndCheckOverLabPairPre" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="6990" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-473" value="计算IOU，并使用匈牙利算法获取最优解" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eINXOdEoiIzQeCJLC4Ov-472">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-474" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2080" y="7020" as="sourcePoint" />
+            <mxPoint x="2126" y="7020.42" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-475" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-166" target="eINXOdEoiIzQeCJLC4Ov-170">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1950" y="7250" as="sourcePoint" />
+            <mxPoint x="2000" y="7200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-476" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-170" target="eINXOdEoiIzQeCJLC4Ov-174">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1890" y="7130" as="sourcePoint" />
+            <mxPoint x="1940" y="7080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-479" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-174" target="eINXOdEoiIzQeCJLC4Ov-178">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1890" y="8060" as="sourcePoint" />
+            <mxPoint x="1940" y="8010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-480" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-178" target="eINXOdEoiIzQeCJLC4Ov-182">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1890" y="8060" as="sourcePoint" />
+            <mxPoint x="1940" y="8010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eINXOdEoiIzQeCJLC4Ov-481" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eINXOdEoiIzQeCJLC4Ov-182" target="eINXOdEoiIzQeCJLC4Ov-186">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1890" y="8060" as="sourcePoint" />
+            <mxPoint x="1940" y="8010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

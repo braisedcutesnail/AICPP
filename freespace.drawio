@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T10:00:52.596Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="yxAKuFNyfAMrXSGn5YbE" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-07T13:24:46.507Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="vrjvRG6z04MzZS_iMCjy" version="21.2.7" type="github">
   <diagram name="第 1 页" id="57BuNKa8IsS4j7cQpLVn">
     <mxGraphModel dx="1763" dy="998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -62,42 +62,45 @@
           <mxGeometry x="10" y="100" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-21" value="GetFreespacebyFreeMat" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="640" y="1410" width="200" height="250" as="geometry" />
+          <mxGeometry x="620" y="2360" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-66" value="作用：基于freespace mat提取每一列最近的freespace边界点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-21">
+          <mxGeometry x="5" y="30" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-22" value="GetFreespacebyConnectRegion" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
           <mxGeometry x="640" y="1100" width="200" height="250" as="geometry" />
         </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-65" value="作用：主要利用parsing连通域信息提取freespace的边界点，对每个freespace连通域会进行逐行遍历，找到每一列最近的freespace边界点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-22">
+          <mxGeometry x="5" y="30" width="190" height="70" as="geometry" />
+        </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-23" value="FillFreespaceLabel" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="643" y="1750" width="200" height="250" as="geometry" />
+          <mxGeometry x="620" y="2670" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-68" value="作用：填充freespace的label信息，有插值方式和非插值方式" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-23">
+          <mxGeometry x="5" y="20" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-24" value="FillFreespacePointPosition" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="643" y="2060" width="200" height="250" as="geometry" />
+          <mxGeometry x="620" y="2980" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-69" value="作用：利用外参转换关系计算freespace点在vcs坐标系下的点坐标。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-24">
+          <mxGeometry x="5" y="30" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-25" value="MerrgeFreespacelabel" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="643" y="2360" width="200" height="250" as="geometry" />
+          <mxGeometry x="620" y="3288" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-70" value="作用：根据freespace原始的parsing_label信息，将freespace关键label分为以下两个类型：&lt;br&gt;reserve_labels和active_labels" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-25">
+          <mxGeometry x="5" y="32" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-26" value="IsStaticLabel" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
-          <mxGeometry x="913" y="1440" width="200" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-27" value="作用：对矩形框的上下左右四个点进行畸变校正" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-26">
-          <mxGeometry y="30" width="190" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-28" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_top: 上边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_bottom：下边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_left：左边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_right：右边界中点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-26">
-          <mxGeometry y="70" width="167.5" height="85" as="geometry" />
+          <mxGeometry x="893" y="2390" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-29" value="IsCarLable" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
-          <mxGeometry x="913" y="1650" width="200" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-30" value="作用：对矩形框的上下左右四个点进行畸变校正" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-29">
-          <mxGeometry y="30" width="190" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-31" value="各参数如下：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_top: 上边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_bottom：下边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_left：左边界中点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;pt_right：右边界中点" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-29">
-          <mxGeometry y="70" width="167.5" height="85" as="geometry" />
+          <mxGeometry x="893" y="2600" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-32" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="843" y="1490" as="sourcePoint" />
-            <mxPoint x="913" y="1490" as="targetPoint" />
+            <mxPoint x="823" y="2440" as="sourcePoint" />
+            <mxPoint x="893" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-34" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
@@ -118,41 +121,32 @@
             <mxPoint x="740" y="850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-22" target="pPGo_pkk9lnaHYxOd3pL-21">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="783" y="1320" as="sourcePoint" />
-            <mxPoint x="833" y="1270" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-21" target="pPGo_pkk9lnaHYxOd3pL-23">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="783" y="1660" as="sourcePoint" />
-            <mxPoint x="833" y="1610" as="targetPoint" />
+            <mxPoint x="763" y="2610" as="sourcePoint" />
+            <mxPoint x="813" y="2560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-26" target="pPGo_pkk9lnaHYxOd3pL-29">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="783" y="1660" as="sourcePoint" />
-            <mxPoint x="833" y="1610" as="targetPoint" />
+            <mxPoint x="763" y="2610" as="sourcePoint" />
+            <mxPoint x="813" y="2560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-23" target="pPGo_pkk9lnaHYxOd3pL-24">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="783" y="1990" as="sourcePoint" />
-            <mxPoint x="833" y="1940" as="targetPoint" />
+            <mxPoint x="763" y="2940" as="sourcePoint" />
+            <mxPoint x="813" y="2890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-24" target="pPGo_pkk9lnaHYxOd3pL-25">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="783" y="2330" as="sourcePoint" />
-            <mxPoint x="833" y="2280" as="targetPoint" />
+            <mxPoint x="763" y="3280" as="sourcePoint" />
+            <mxPoint x="813" y="3230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-42" value="GetPerceptionRect" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
           <mxGeometry x="913" y="1100" width="200" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-43" value="作用：对矩形框的上下左右四个点进行畸变校正" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-42">
-          <mxGeometry y="30" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-45" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -163,9 +157,6 @@
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-46" value="NoiseProcess" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#99FF99;" vertex="1" parent="1">
           <mxGeometry x="913" y="1250" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-47" value="作用：对矩形框的上下左右四个点进行畸变校正" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-46">
-          <mxGeometry y="30" width="190" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-42" target="pPGo_pkk9lnaHYxOd3pL-46">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="773" y="1350" as="sourcePoint" />
@@ -175,8 +166,8 @@
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-50" value="FillFreespaceMsg" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="485" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-51" value="作用：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-50">
-          <mxGeometry x="5" y="30" width="60" height="30" as="geometry" />
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-51" value="作用：将cam_freespace_raw中的信息存入fov_ray_msg中" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-50">
+          <mxGeometry x="7.5" y="35" width="175" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-4" target="pPGo_pkk9lnaHYxOd3pL-50">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -187,8 +178,8 @@
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-53" value="UpdateResultToProto" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="730" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="pPGo_pkk9lnaHYxOd3pL-54" value="作用：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-53">
-          <mxGeometry x="5" y="30" width="60" height="30" as="geometry" />
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-54" value="作用：将结果存入Proto中" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-53">
+          <mxGeometry x="5" y="30" width="155" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-50" target="pPGo_pkk9lnaHYxOd3pL-53">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -203,7 +194,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-59" value="get_freespace_mode_" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="643" y="930" width="190" height="100" as="geometry" />
+          <mxGeometry x="645" y="930" width="190" height="100" as="geometry" />
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-60" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-59" target="pPGo_pkk9lnaHYxOd3pL-22">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -216,6 +207,132 @@
         </mxCell>
         <mxCell id="pPGo_pkk9lnaHYxOd3pL-64" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="590" y="950" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-67" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-58" target="pPGo_pkk9lnaHYxOd3pL-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="800" as="sourcePoint" />
+            <mxPoint x="830" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-71" value="GetIgnoreHeight" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1260" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-72" value="作用：遍历parking的连通域，找到可通行区域的上边界。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-71">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-73" value="ConnectRegionProcess" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1420" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-74" value="作用：计算free mat 的连通域（将所有可以融合的区域进行融合）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-73">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-75" value="GetFreeMatRegion" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1580" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-76" value="作用：获取freemat处理后的连通域结果，将尺寸小于设定噪声范围的区域，设定为可通行区域。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-75">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-77" value="GetDynamicRegion" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1740" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-78" value="作用：获取parsing中动态连通域信息，将人、车、三轮车添加到dynamic_regions中。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-77">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-79" value="GetConeRegion" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1900" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-80" value="作用：获取锥桶区域" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-79">
+          <mxGeometry x="5" y="30" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-81" value="DynamicBBoxMatching" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="2040" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-82" value="作用：动态连通域bbox关联，将完全处于not free regions区域的dynamic_region存储在region_list中，并将not free region与dynamic region进行面积之比，目的是为了将not free region 拆分到dym_region和static region" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-81">
+          <mxGeometry x="5" y="40" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-83" value="RemoveDynamicRegions" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="2200" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-84" value="作用：移除道路内误检的动态连通域。通过遍历道路内的动态连通域以及当前图像检测到的动态目标的2D检测框，计算IOU，如果IOU小于阈值，即视为动态连通域存在误检，并将此区域设为可通行区域" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-83">
+          <mxGeometry x="5" y="30" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-86" value="RemoveConeRegions" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="2360" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-87" value="作用：移除误检的锥桶区域" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-86">
+          <mxGeometry x="5" y="30" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-88" value="RemoveStaticRegions" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="2510" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-89" value="作用：移除道路内误检的静态连通域" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-88">
+          <mxGeometry x="5" y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-90" value="UpdateRegionFrame" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="2680" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-91" value="作用：更新当前连通域的信息，写入当前camera odo 以及frame id等信息，移动环形缓存指针" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pPGo_pkk9lnaHYxOd3pL-90">
+          <mxGeometry x="5" y="30" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-92" value="call" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1120" y="1280" as="sourcePoint" />
+            <mxPoint x="1190" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-93" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-71" target="pPGo_pkk9lnaHYxOd3pL-73">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="1870" as="sourcePoint" />
+            <mxPoint x="1380" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-94" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="pPGo_pkk9lnaHYxOd3pL-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1290" y="1540" as="sourcePoint" />
+            <mxPoint x="1380" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-95" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-75" target="pPGo_pkk9lnaHYxOd3pL-77">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1300" y="1700" as="sourcePoint" />
+            <mxPoint x="1380" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-96" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-77" target="pPGo_pkk9lnaHYxOd3pL-79">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="1690" as="sourcePoint" />
+            <mxPoint x="1380" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-97" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-79" target="pPGo_pkk9lnaHYxOd3pL-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="2060" as="sourcePoint" />
+            <mxPoint x="1380" y="2010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-98" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-81" target="pPGo_pkk9lnaHYxOd3pL-83">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="2180" as="sourcePoint" />
+            <mxPoint x="1380" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-99" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-83" target="pPGo_pkk9lnaHYxOd3pL-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="2800" as="sourcePoint" />
+            <mxPoint x="1380" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-100" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-86" target="pPGo_pkk9lnaHYxOd3pL-88">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="2800" as="sourcePoint" />
+            <mxPoint x="1380" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pPGo_pkk9lnaHYxOd3pL-101" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPGo_pkk9lnaHYxOd3pL-88" target="pPGo_pkk9lnaHYxOd3pL-90">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="2800" as="sourcePoint" />
+            <mxPoint x="1380" y="2750" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
